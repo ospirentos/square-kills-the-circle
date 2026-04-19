@@ -3,7 +3,8 @@
 
 enum class EntityShape { CIRCLE, SQUARE, TRIANGLE };
 enum class EntityState { IDLE, MOVING, ATTACKING, DEAD };
-enum class Team { RED, BLUE };
+// [Dikkat] RED, BLUE, GREEN raylib macro'larıdır — enum değerleri PascalCase kullanır.
+enum class Team { Red, Blue, Green };
 
 // [Ne yapıyor] Oyundaki her savaşan birimin tüm verisini tutan struct.
 // [Neden struct] Davranış burada değil, systems/ klasöründeki fonksiyonlarda olacak.

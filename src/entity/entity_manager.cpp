@@ -19,6 +19,11 @@ void EntityManager::Remove(int id) {
     }
 }
 
+void EntityManager::Clear() {
+    entities.clear();
+    nextId = 0;
+}
+
 std::vector<Entity>& EntityManager::GetAll() {
     return entities;
 }

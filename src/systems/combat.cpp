@@ -6,12 +6,11 @@ namespace Combat {
         target.hp -= attacker.damage;
     }
 
+    // [Ne yapıyor] HP<=0 olanları DEAD işaretler; active=false'ı Game yapar (particle spawn için).
     void CheckDeaths(std::vector<Entity>& entities) {
         for (auto& e : entities) {
-            if (e.active && e.hp <= 0.0f) {
+            if (e.active && e.hp <= 0.0f)
                 e.state = EntityState::DEAD;
-                e.active = false;
-            }
         }
     }
 }

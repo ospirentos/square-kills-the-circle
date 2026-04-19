@@ -6,7 +6,7 @@ return {
     speed  = 100,
     damage = 18,
     radius = 19,
-    attack_range   = 24,
+    attack_range   = 46,
     attack_cooldown = 1.0,
     color  = { r = 120, g = 220, b = 120 },
 

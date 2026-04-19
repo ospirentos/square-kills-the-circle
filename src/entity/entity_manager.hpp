@@ -9,6 +9,7 @@ class EntityManager {
 public:
     Entity& Spawn(EntityShape shape, Team team, Vector2 position);
     void Remove(int id);
+    void Clear();
     std::vector<Entity>& GetAll();
 
 private:
